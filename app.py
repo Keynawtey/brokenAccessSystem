@@ -96,7 +96,7 @@ def add():
         # we check if the loggedin user is a user not admin
         role = session['userrole']
 
-        if role == 'User or Admin':
+        if role == 'User':
             if request.method == 'POST':
                 message_title = request.form['message_title']
                 message_body = request.form['message_body']
